@@ -1,0 +1,153 @@
+:root{
+  --fc-today-bg-color: #F5F6FA;
+}
+
+
+.board-holder{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background: linear-gradient(132.98deg, #F4F4F4 2.59%, #D0CDD2 90.8%);
+}
+
+.overview-board-content{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1em;
+    background-color: white;
+    border-radius: 15px;
+    padding-right: 1em;
+}
+
+
+.holder{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.calendar-holder {
+    width: 90%;
+    height: 90%;
+    /* position: absolute; */
+    /* transform: scale(0.7); */
+    /* overflow: scroll; */
+  }
+  
+  /* .fc-day-grid-container.fc-scroller {
+      height: auto!important;
+      overflow-y: auto;
+  } */
+  
+  /* .fc .fc-toolbar-title {
+    font-size: 1.75em;
+    margin: 0;
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #4d4f5c;
+  }*/
+  
+  .fc .fc-button-group {
+    display: inline-flex;
+    position: relative;
+    vertical-align: middle;
+    background: #ffffff;
+  }
+  
+  .fc .fc-button-primary {
+    background-color: #ffffff;
+    border-color: #a3a6b4;
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    
+  
+    color: #4d4f5c;
+  }
+  
+  .fc .fc-button-primary:not(:disabled).fc-button-active,
+  .fc .fc-button-primary:not(:disabled):active {
+    background-color: #ffffff;
+    border-color: #a3a6b4;
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 10px;
+    
+  
+    color: #3b86ff;
+  }
+  
+  .fc-theme-standard th {
+    background: #f5f6fa;
+    border: 1px solid var(#f5f6fa);
+  }
+
+  /*
+  .fc .fc-col-header-cell-cushion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 4px;
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 9px;
+    
+  
+    color: #a3a6b4;
+  }
+  
+  .fc .fc-timegrid-slot-label-cushion {
+    padding: 0 4px;
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    
+  
+    color: #4d4f5c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }*/
+  
+  .fc .fc-timegrid-col.fc-day-today {
+      background-color: #F5F6FA;
+  } 
+
+
+  #cards-list{
+    /* background-color: green; */
+    width: 20%;
+    height: 80%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+
+  .fc-event{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+  }

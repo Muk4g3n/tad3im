@@ -1,0 +1,90 @@
+.board-holder{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background: linear-gradient(132.98deg, #F4F4F4 2.59%, #D0CDD2 90.8%);
+}
+
+.overview-board-content{
+    width: 80%;
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1em;
+    background-color: white;
+    border-radius: 15px;
+    padding-right: 1em;
+}
+
+
+.overview-board-content .top-board-content{
+    width: 100%;
+    height: 25%;
+    /* background-color: aqua; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+
+
+.top-board-content .background-images{
+    align-self: center;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.top-board-content .background-images img{
+    width: clamp(3rem,3rem + 2vw,5rem);
+    height: auto;
+}
+
+.top-board-content .content-header{
+    align-self: flex-start;
+    height: 65%;
+    width: 30%;
+    background: #7987FB;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.top-board-content .content-header .text{
+    font-weight: bold;
+    font-size: clamp(0.8em,8em + 0.5vw,1.5em);
+    line-height: 1em;
+
+    color: #FFFFFF;
+}
+
+.top-board-content .content-header .text span{
+    font-weight: bold;
+    font-size: 0.5em;
+    line-height: 1em;
+}
+
+.top-board-content .top-progress{
+    align-self: center;
+    width: 25%;
+    height: 100%;
+}
+
+.overview-board-content .lesson-grid{
+    /* background-color: aqua; */
+    width: 95%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    gap: clamp(0.5rem , 0.5rem + 0.5vw , 1rem);
+}

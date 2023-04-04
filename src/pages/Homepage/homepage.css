@@ -1,0 +1,110 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+#bg_image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#bg_person{
+    /* width: 100%;
+    height: 100%; */
+    transform: scale(0.7);
+    position: absolute;
+    right: 15%;
+    bottom: 5%;
+}
+    
+#bg_line{
+position: absolute;
+transform: scale(0.7);
+right: -2%;
+top: -5%;
+}
+
+#bg_cone{
+    position: absolute;
+    transform: scale(0.7);
+    left: 25%;
+    bottom: 15%;
+    }
+
+
+#bg_icosphere{
+    position: absolute;
+    transform: scale(0.6);
+    top: 5%;
+    right: 33%;
+    z-index: -1;
+}
+
+.page_content{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 65%;
+    align-items: flex-start;
+    justify-content: space-around;
+    /* background-color: blue; */
+
+}
+
+#Logo{
+    transform: scale(0.8);
+    margin-left: 2em;
+    margin-bottom: 2rem;
+}
+
+.page_content h1{
+    width: 120%;
+
+    padding-left: 1em;
+    margin-bottom: 5rem;
+    font-weight: 2rem;
+    font-size: clamp(1rem,1rem + 2.5vw,4rem);
+    line-height: 1rem;
+
+    color: #42335E;
+}
+
+
+.page_content .buttons{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    margin-left: 4rem;
+    gap: 5rem;
+}
+
+.buttons .join{
+    min-width: max(7rem,18%);
+    height: 55%;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 40px;
+    background-color: #DBDBED;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    border: none;
+}
+
+.buttons span{
+    text-decoration: underline;
+}

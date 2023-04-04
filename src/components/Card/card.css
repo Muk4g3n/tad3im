@@ -1,0 +1,110 @@
+
+.card-holder{
+    display: flex;
+    flex-direction: column;
+    width: clamp(9rem , 9rem + 3vw , 12rem);
+    height: clamp(10rem,10rem + 4vw,12rem);
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.card-holder .module{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.module .module-title{
+    height: 55%;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(1.3rem , 1.3rem + 0.5vw  , 1.8rem);
+    line-height: 2em;
+    color: #4D4F5C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.module .loading-bar{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.loading-bar .loading-level{
+    font-size: 0.8em;
+    width: 100%;
+    text-align: right;
+}
+
+.loading-bar .fullbar, .loading-bar .bar{
+    position: absolute;
+    width: clamp( 8rem , 8rem + 3vw  , 11rem);
+    width: 100%;
+    height: 0.2em;
+    background: #EDF0F5;
+    bottom: -15%;
+    border-radius: 5px;
+}
+
+.loading-bar .bar{
+    left: 0;
+    border-radius: 5px;
+}
+
+
+.card-holder .card{
+    width: clamp(6rem, 6rem + 3vw , 9rem);
+    height: clamp(6rem, 6rem + 3vw , 9rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(180deg, #4B99FF 0.3%, #38E0C5 100%);
+    border-radius: 15px;
+    position: relative;
+}
+
+
+.card-holder .card .lesson{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+
+.card-holder .card .see-more{
+    width: 80%;
+    height: 20%;
+    border: none;
+    border-radius: 10px;
+    background: #006EFF;
+    color: white;
+    z-index: 3;
+    margin-bottom: 0.5em;
+    text-decoration: none;
+    display: grid;
+    place-content: center;
+}
+
+.card-holder .card .gray{
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: rgba(62, 67, 104, 0.4);
+    left: 5%;
+    bottom: -5%;
+    z-index: 0;
+}

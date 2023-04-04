@@ -1,0 +1,113 @@
+.container{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 61.042vw;
+    height: 95vh;
+    position: relative;
+    
+
+}
+
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-content form{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.form-content .input{
+    display: flex;
+    flex-direction: column;
+    height: 13vh;
+    width: 20vw;
+    justify-content: space-evenly;
+}
+
+.form-content .input .custom-label{
+    font-weight: 400;
+    margin-bottom: 5px; 
+}
+
+.form-content .input .custom-input{
+    height: 50%;
+    outline: none;
+    border: #a0a0a0 1px solid;
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 1.1em;
+    transition: box-shadow .3s;
+}
+
+.form-content  span{
+    text-decoration: underline;
+    color: #0E9FF1;
+}
+
+#sign-up{
+    width: 32%;
+    text-align: start;
+    /* background-color: red; */
+}
+
+.form-content .input .custom-input:hover,
+
+.form-content .input .custom-input:focus{
+    box-shadow: 0 0 10px #a0a0a0; 
+}   
+
+.form-content #loginbtn{
+    width: 20vw;
+    height: 6vh;
+    background-color: #0E9FF1;
+    border: none;
+    color: white;
+    border-radius: 34px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: box-shadow .3s;
+}
+
+#loginbtn:hover{
+    box-shadow: 0 0 10px #0E9FF1; 
+}
+
+
+
+
+
+.img-container{
+    max-width: 38.958vw;
+    height: 100vh;
+    background: #E6F6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 70%;
+    height: auto;
+}

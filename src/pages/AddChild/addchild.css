@@ -1,0 +1,293 @@
+.sigin-container{
+    display: flex;
+    align-items: flex-start;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.add-content-holder{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+width: 61.042vw;
+height: 90vh;
+position: relative;
+    padding-inline: 2em;
+/* background: red; */
+}
+
+
+
+
+.bg-img{
+    position: absolute;
+}
+
+.bg_img_pyramid{
+right: 3%;
+top: 20%;
+}
+
+.bg_img_icosphere{
+    left: 0;
+    bottom: -20%;
+    transform: scale(0.7);
+}
+
+.bg_img_torus{
+    z-index: -1;
+    right: 0;
+    bottom: -11%;
+}
+
+#add-logo{
+    align-self: flex-start;
+    height: clamp(2rem, 2.2rem + 1vw,3.5rem);
+    width: auto;
+    /* margin-right: 2em; */
+
+}
+
+
+.title_holder{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: space-between;
+    padding-inline: 2em;
+    
+}
+
+.title_holder .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-self: flex-end;
+    height: 100%;
+    width: 70%;
+    color: #42335E;
+}
+
+
+.title h1{
+width: 100%;
+height: 20%;
+font-size: clamp(0.7em, 1em + 5vw,1.8em);
+}
+
+.title p{
+    width: 100%;
+    height: 20%;
+    font-size: clamp(0.7em, 1em + 5vw,1.2em);
+}
+
+form{
+    width: 50%;
+    height: 60%;
+    position: relative;
+    margin-right: 5rem;
+}
+
+
+.form-flex-content{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.yearToChoose{
+    height: clamp(2rem,2rem + 2vw,4rem);
+    width: clamp(2rem,2rem + 2vw,4rem);
+    border-radius: 50%;
+    position: absolute;
+    /* border: 1.5px black solid; */
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+}
+
+.yearToChoose input{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    font-weight: 900;
+    font-size: 1.2em;
+    text-align: center;
+    border: none;
+    pointer-events: none;
+    background-color: white;
+    border: 1.5px black solid;
+    color: #0E9FF1;
+}
+
+
+.yearToChoose input:is(:hover,:focus,:focus-visible,:focus-within){
+    outline: none;
+    border: 1.5px #0E9FF1 solid;
+}
+
+
+
+.yearToChoose input::placeholder{
+    color: #0E9FF1;
+}
+
+
+.yearToChoose input#active::placeholder{
+    border: 1.5px #0E9FF1 solid;
+    
+}
+
+#active{
+    border: 3px #0E9FF1 solid;
+}
+
+
+.yearToChoose:nth-child(1){
+    transform: translateX(-260%) translateY(-120%);
+}
+
+.yearToChoose:nth-child(2){
+    transform: translateX(-230%) translateY(-240%);
+}
+
+.yearToChoose:nth-child(3){
+    transform: translateX(-120%) translateY(-320%);
+}
+
+.yearToChoose:nth-child(4){
+    transform: translateX(20%) translateY(-320%);
+}
+
+.yearToChoose:nth-child(5){
+    transform: translateX(130%) translateY(-240%);
+}
+
+.yearToChoose:nth-child(6){
+    transform: translateX(160%) translateY(-120%);
+}
+
+
+.form-flex-content .add_image{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add_image .upload{
+    width: clamp(5rem, 3rem + 4.5vw,9rem);
+    height: clamp(5rem,3rem + 4.5vw,9rem);
+    border: 1px black solid;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.upload .noprofil{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .upload .round{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    background: #0E9FF1;;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+  }
+
+  .upload .round img{
+      height: 100%;
+      width: auto;
+  }
+  
+  .upload .round input[type = "file"]{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+  }
+  
+  input[type=file]::-webkit-file-upload-button{
+      cursor: pointer;
+  }
+
+
+.form-flex-content .name{
+    width: 60%;
+    height: 10%;
+    padding-left: 1em;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: clamp(0.9em,0.9em + 0.4vw,1.3em);
+}
+
+
+.form-flex-content .name:focus-within,.form-flex-content .name:focus-visible,.form-flex-content .name:focus{
+    outline: none;
+    border-bottom: 2px solid #0E9FF1;
+}
+
+.form-flex-content .add_btn{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.add_btn #add-loginbtn{
+    width: 20vw;
+    height: 6vh;
+    background-color: #0E9FF1;
+    border: none;
+    color: white;
+    border-radius: 34px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: box-shadow .3s;
+}
+
+#add-loginbtn:hover{
+    box-shadow: 0 0 10px #0E9FF1; 
+}
+
+
+.signin-img-container{
+    width: 38.958vw;
+    height: 100vh;
+    background: #E6F6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-img-container img{
+    width: 70%;
+    height: auto;
+}
+

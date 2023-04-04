@@ -1,0 +1,137 @@
+.stats_card {
+  width: 65%;
+  height: 100%;
+  background: #95cfd9;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.stats-top {
+  width: 92%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stats-top .top-content {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats-top .top-content .list {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.top-content .list .item {
+  width: fit-content;
+  height: 65%;
+  font-weight: bold;
+  font-size: clamp(0.8em, 0.8em + 1vw ,1.8em);
+  line-height: 1.5em;
+  cursor: pointer;
+  text-align: center;
+  color: #0f1322;
+}
+
+.active{
+  position: relative;
+}
+
+.active::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #fe4c24;
+  border-radius: 4px;
+}
+
+#select-filter {
+  width: 15%;
+  height: 50%;
+  background-color: #0f1322;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding-left: 1em;
+}
+
+select * {
+  width: 100%;
+  height: 50%;
+  border-radius: 0;
+}
+
+.stats-top .mini-stats {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.stats-top .mini-stats p {
+  font-size: clamp(0.7em, 0.5em + 0.8vw ,1.3em);
+  line-height: 1.3em;
+  padding-top: 1em;
+
+  color: #0f1322;
+}
+
+.stats-top .mini-stats p span {
+  font-weight: bold;
+}
+
+.stats-bottom {
+  width: 98%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* background-color: #fe4c24; */
+  position: absolute;
+  bottom: 1%;
+}
+
+
+
+/* .stats-bottom .chart-X-content {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats-bottom .chart-X-content .dayX {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #0f1322;
+}
+
+.stats-bottom .chart-X-content .monthX{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    
+  
+    color: #0f1322;
+} */

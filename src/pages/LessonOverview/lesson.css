@@ -1,0 +1,262 @@
+.board-holder{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background: linear-gradient(132.98deg, #F4F4F4 2.59%, #D0CDD2 90.8%);
+}
+
+.overview-board-content{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1em;
+    background-color: white;
+    border-radius: 15px;
+    padding-right: 1em;
+    position: relative;
+}
+
+#red-ico{
+    position: absolute;
+    width: clamp(4rem, 4rem + 5vw,9rem);
+    height: auto;
+    bottom: -6%;
+    right: 5%;
+}
+
+
+
+.overview-board-content .top-board-content{
+    width: 100%;
+    height: 25%;
+    /* background-color: aqua; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+
+
+.top-board-content .background-images{
+    align-self: center;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.top-board-content .background-images img{
+    width: clamp(3rem,3rem + 2vw,5rem);
+    height: auto;
+}
+
+.top-board-content .content-header{
+    align-self: flex-start;
+    height: 65%;
+    width: 30%;
+    background: #7987FB;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.top-board-content .content-header .text{
+    font-weight: bold;
+    font-size: clamp(0.8em,8em + 0.5vw,1.5em);
+    line-height: 1em;
+
+    color: #FFFFFF;
+}
+
+.top-board-content .content-header .text span{
+    font-weight: bold;
+    font-size: 0.5em;
+    line-height: 1em;
+}
+
+.top-board-content .top-progress{
+    align-self: center;
+    width: 25%;
+    height: 100%;
+}
+
+
+
+.bottom-board-content{
+    height: 70%;
+    width: 80%;
+    border: 7px  #7987FB solid;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+
+.top-main{
+    width: 100%;
+    height: 30%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-main .return-btn{
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 25%;
+}
+
+
+.top-main .return-btn:hover{
+    text-decoration: underline;
+}
+
+.top-main  .return-btn p{
+    font-weight: bold;
+    font-size: clamp(0.6em,0.7em + 0.4vw ,1.2em);
+    line-height: 1.8em;
+
+
+    color: #252E48;
+}
+
+.card-overview{
+    align-self: center;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2em;
+}
+
+.card-overview .card{
+    width: clamp(5rem , 5rem + 2vw , 7rem);
+    height: clamp(5rem , 5rem + 2vw , 7rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(180deg, #4B99FF 0.3%, #38E0C5 100%);
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 1em;
+    margin-right: 0.5em;
+}
+
+
+.card-overview .card .lesson{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+
+.card-overview .card .see-more{
+    width: 80%;
+    height: 20%;
+    border: none;
+    border-radius: 10px;
+    background: #006EFF;
+    color: white;
+    z-index: 3;
+    margin-bottom: 0.5em;
+}
+
+.card-overview .card .gray{
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: rgba(62, 67, 104, 0.4);
+    left: 5%;
+    bottom: -5%;
+    z-index: 0;
+}
+
+
+.card-overview .module-title{
+    height: 10%;
+    width: 20%;
+    text-align: center;
+    font-weight: normal;
+    font-size: clamp(0.9em , 0.9em + 0.7vw , 1.6em);
+    line-height: 1.6em;
+    color: #4D4F5C;
+}
+
+.card-overview .loading-bar{
+    height: 50%;
+    width: 40%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.loading-bar .loading-level{
+    font-size: 1em;
+    /* margin-bottom: 0.5em; */
+    /* background-color: red; */
+    width: 100%;
+    text-align: right;
+}
+
+.loading-bar .fullbar, .loading-bar .bar{
+    position: absolute;
+    width: clamp(60% , 60%  + 2vw, 100%);
+    height: 10%;
+    background: #EDF0F5;
+    bottom: 20%;
+    border-radius: 5px;
+}
+
+.loading-bar .bar{
+    /* color: red;
+    z-index: 2; */
+    left: 0;
+   
+}
+
+.top-main .circle{
+    align-self: flex-end;
+    margin-right: 2em;
+    border-radius: 50%;
+    width: clamp(4rem, 4rem + 1vw ,5rem);
+    height: clamp(4rem, 4rem + 1vw ,5rem);
+    background: linear-gradient(310.26deg, #FCF4AD 15.41%, #FF0023 83.47%);
+    opacity: 0.38;
+}
+
+.study-types{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.study-types .type{
+    height: clamp(6rem  , 6rem + 4vw , 10rem);
+    width: auto;
+}
